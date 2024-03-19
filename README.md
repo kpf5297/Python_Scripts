@@ -15,7 +15,7 @@ The repository is organized into branches, each representing a different script 
 
 Below is a list of currently available scripts, each residing in its own branch:
 
-- `excel-time-filter`: A script for reducing the resolution of time series data in Excel files.
+- `row_parser.py`: A script for reducing the resolution of time series data in Excel files.
 - *More scripts will be added over time.*
 
 ## Getting Started
