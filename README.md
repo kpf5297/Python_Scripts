@@ -10,6 +10,7 @@ The repository is organized into branches, each representing a different script 
 
 - `main`: The default branch containing the project overview and general information.
 - `feature/nodal-delay-calculator`: A branch for the Total Nodal Delay Calculator script, a GUI application to calculate the total nodal delay in a network based on user inputs.
+- `Excel_row_parser`: A branch for the Row Parser script, which processes an Excel file by selecting every 22nd row and saves the result to a CSV file.
 - Other branches: Each branch is named according to the script or task it automates, providing a focused environment for that specific automation.
 
 ## Scripts Overview
@@ -33,3 +34,4 @@ To use the scripts in this repository:
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
 
+Thank you for visiting the Python Automation Scripts repository. We hope you find these tools helpful in your endeavors to automate and simplify tasks!
