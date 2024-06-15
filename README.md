@@ -9,6 +9,7 @@ The repository is organized into branches, each representing a different script 
 ### Branches
 
 - `main`: The default branch containing the project overview and general information.
+- `feature/nodal-delay-calculator`: A branch for the Total Nodal Delay Calculator script, a GUI application to calculate the total nodal delay in a network based on user inputs.
 - Other branches: Each branch is named according to the script or task it automates, providing a focused environment for that specific automation.
 
 ## Scripts Overview
@@ -16,6 +17,7 @@ The repository is organized into branches, each representing a different script 
 Below is a list of currently available scripts, each residing in its own branch:
 
 - `row_parser.py`: A script for reducing the resolution of time series data in Excel files.
+- `nodal_delay_calculator.py`: A script for calculating the total nodal delay in a network using a GUI interface.
 - *More scripts will be added over time.*
 
 ## Getting Started
@@ -27,16 +29,6 @@ To use the scripts in this repository:
 3. Install any dependencies required by the script, typically listed at the top of the script file or in a `requirements.txt` file in the branch.
 4. Run the script following the instructions provided in the script's comments or the branch's `README.md`.
 
-## Contributing
-
-Contributions to this project are welcome! Whether you have a suggestion for improving an existing script, or you have a new script to automate a task not currently covered, please feel free to contribute. See the `CONTRIBUTING.md` file for guidelines on how to make contributions.
-
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-## Contact
-
-For any questions or suggestions, please feel free to contact the project maintainer(s) via GitHub issues or pull requests.
-
-Thank you for visiting the Python Automation Scripts repository. We hope you find these tools helpful in your endeavors to automate and simplify tasks!
