@@ -1,2 +1,2 @@
 # Requirements for Total Nodal Delay Calculator
-tkinter
+PyQt5
