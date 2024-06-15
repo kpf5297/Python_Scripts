@@ -34,7 +34,7 @@ class NodalDelayCalculator(QWidget):
         packet_length_layout = QGridLayout()
         packet_length_group.setLayout(packet_length_layout)
         self.packet_length_label = QLabel('Packet Length (bytes):')
-        self.packet_length_input = QLineEdit()
+        self.packet_length_input = QLineEdit('25')  # Default value: 200 bits / 8 bits per byte = 25 bytes
         packet_length_layout.addWidget(self.packet_length_label, 0, 0)
         packet_length_layout.addWidget(self.packet_length_input, 0, 1)
         main_layout.addWidget(packet_length_group)
@@ -44,11 +44,11 @@ class NodalDelayCalculator(QWidget):
         tp_layout1 = QGridLayout()
         tp_group1.setLayout(tp_layout1)
         self.transmission_rate1_label = QLabel('Transmission Rate 1 (bps):')
-        self.transmission_rate1_input = QLineEdit()
+        self.transmission_rate1_input = QLineEdit('1000')  # Default value: 1 kbps
         self.distance1_label = QLabel('Distance 1 (km):')
-        self.distance1_input = QLineEdit()
+        self.distance1_input = QLineEdit('10')  # Default value: 10 km
         self.propagation_speed1_label = QLabel('Propagation Speed 1 (m/s):')
-        self.propagation_speed1_input = QLineEdit()
+        self.propagation_speed1_input = QLineEdit('1000000')  # Default value: 10x10^5 m/s = 1,000,000 m/s
         tp_layout1.addWidget(self.transmission_rate1_label, 0, 0)
         tp_layout1.addWidget(self.transmission_rate1_input, 0, 1)
         tp_layout1.addWidget(self.distance1_label, 1, 0)
@@ -62,11 +62,11 @@ class NodalDelayCalculator(QWidget):
         tp_layout2 = QGridLayout()
         tp_group2.setLayout(tp_layout2)
         self.transmission_rate2_label = QLabel('Transmission Rate 2 (bps):')
-        self.transmission_rate2_input = QLineEdit()
+        self.transmission_rate2_input = QLineEdit('0')  # Default value: 0 for unused field
         self.distance2_label = QLabel('Distance 2 (km):')
-        self.distance2_input = QLineEdit()
+        self.distance2_input = QLineEdit('0')  # Default value: 0 for unused field
         self.propagation_speed2_label = QLabel('Propagation Speed 2 (m/s):')
-        self.propagation_speed2_input = QLineEdit()
+        self.propagation_speed2_input = QLineEdit('0')  # Default value: 0 for unused field
         tp_layout2.addWidget(self.transmission_rate2_label, 0, 0)
         tp_layout2.addWidget(self.transmission_rate2_input, 0, 1)
         tp_layout2.addWidget(self.distance2_label, 1, 0)
@@ -80,11 +80,11 @@ class NodalDelayCalculator(QWidget):
         tp_layout3 = QGridLayout()
         tp_group3.setLayout(tp_layout3)
         self.transmission_rate3_label = QLabel('Transmission Rate 3 (bps):')
-        self.transmission_rate3_input = QLineEdit()
+        self.transmission_rate3_input = QLineEdit('0')  # Default value: 0 for unused field
         self.distance3_label = QLabel('Distance 3 (km):')
-        self.distance3_input = QLineEdit()
+        self.distance3_input = QLineEdit('0')  # Default value: 0 for unused field
         self.propagation_speed3_label = QLabel('Propagation Speed 3 (m/s):')
-        self.propagation_speed3_input = QLineEdit()
+        self.propagation_speed3_input = QLineEdit('0')  # Default value: 0 for unused field
         tp_layout3.addWidget(self.transmission_rate3_label, 0, 0)
         tp_layout3.addWidget(self.transmission_rate3_input, 0, 1)
         tp_layout3.addWidget(self.distance3_label, 1, 0)
@@ -98,11 +98,11 @@ class NodalDelayCalculator(QWidget):
         tp_layout4 = QGridLayout()
         tp_group4.setLayout(tp_layout4)
         self.transmission_rate4_label = QLabel('Transmission Rate 4 (bps):')
-        self.transmission_rate4_input = QLineEdit()
+        self.transmission_rate4_input = QLineEdit('0')  # Default value: 0 for unused field
         self.distance4_label = QLabel('Distance 4 (km):')
-        self.distance4_input = QLineEdit()
+        self.distance4_input = QLineEdit('0')  # Default value: 0 for unused field
         self.propagation_speed4_label = QLabel('Propagation Speed 4 (m/s):')
-        self.propagation_speed4_input = QLineEdit()
+        self.propagation_speed4_input = QLineEdit('0')  # Default value: 0 for unused field
         tp_layout4.addWidget(self.transmission_rate4_label, 0, 0)
         tp_layout4.addWidget(self.transmission_rate4_input, 0, 1)
         tp_layout4.addWidget(self.distance4_label, 1, 0)
@@ -116,17 +116,17 @@ class NodalDelayCalculator(QWidget):
         delays_layout = QGridLayout()
         delays_group.setLayout(delays_layout)
         self.processing_delay1_label = QLabel('Processing Delay 1 (sec):')
-        self.processing_delay1_input = QLineEdit()
+        self.processing_delay1_input = QLineEdit('0')  # Default value: 0
         self.queuing_delay1_label = QLabel('Queuing Delay 1 (sec):')
-        self.queuing_delay1_input = QLineEdit()
+        self.queuing_delay1_input = QLineEdit('0')  # Default value: 0
         self.processing_delay2_label = QLabel('Processing Delay 2 (sec):')
-        self.processing_delay2_input = QLineEdit()
+        self.processing_delay2_input = QLineEdit('0')  # Default value: 0 for unused field
         self.queuing_delay2_label = QLabel('Queuing Delay 2 (sec):')
-        self.queuing_delay2_input = QLineEdit()
+        self.queuing_delay2_input = QLineEdit('0')  # Default value: 0 for unused field
         self.processing_delay3_label = QLabel('Processing Delay 3 (sec):')
-        self.processing_delay3_input = QLineEdit()
+        self.processing_delay3_input = QLineEdit('0')  # Default value: 0 for unused field
         self.queuing_delay3_label = QLabel('Queuing Delay 3 (sec):')
-        self.queuing_delay3_input = QLineEdit()
+        self.queuing_delay3_input = QLineEdit('0')  # Default value: 0 for unused field
         delays_layout.addWidget(self.processing_delay1_label, 0, 0)
         delays_layout.addWidget(self.processing_delay1_input, 0, 1)
         delays_layout.addWidget(self.queuing_delay1_label, 1, 0)
@@ -184,24 +184,29 @@ class NodalDelayCalculator(QWidget):
             # Convert packet length to bits
             L = packet_length * 8
 
-            # Calculate transmission and propagation delays for each node
-            dtran1 = L / transmission_rate1
-            dprop1 = distance1 * 1000 / propagation_speed1
+            # Initialize total end-to-end delay
+            dend_end = 0
 
-            dtran2 = L / transmission_rate2
-            dprop2 = distance2 * 1000 / propagation_speed2
+            # Calculate transmission and propagation delays for each node, if applicable
+            if transmission_rate1 > 0 and propagation_speed1 > 0:
+                dtran1 = L / transmission_rate1
+                dprop1 = distance1 * 1000 / propagation_speed1
+                dend_end += dtran1 + dprop1 + processing_delay1 + queuing_delay1
 
-            dtran3 = L / transmission_rate3
-            dprop3 = distance3 * 1000 / propagation_speed3
+            if transmission_rate2 > 0 and propagation_speed2 > 0:
+                dtran2 = L / transmission_rate2
+                dprop2 = distance2 * 1000 / propagation_speed2
+                dend_end += dtran2 + dprop2 + processing_delay2 + queuing_delay2
 
-            dtran4 = L / transmission_rate4
-            dprop4 = distance4 * 1000 / propagation_speed4
+            if transmission_rate3 > 0 and propagation_speed3 > 0:
+                dtran3 = L / transmission_rate3
+                dprop3 = distance3 * 1000 / propagation_speed3
+                dend_end += dtran3 + dprop3 + processing_delay3 + queuing_delay3
 
-            # Calculate total end-to-end delay
-            dend_end = (dtran1 + dprop1 + processing_delay1 + queuing_delay1 +
-                        dtran2 + dprop2 + processing_delay2 + queuing_delay2 +
-                        dtran3 + dprop3 + processing_delay3 + queuing_delay3 +
-                        dtran4 + dprop4)
+            if transmission_rate4 > 0 and propagation_speed4 > 0:
+                dtran4 = L / transmission_rate4
+                dprop4 = distance4 * 1000 / propagation_speed4
+                dend_end += dtran4 + dprop4
 
             # Display the result
             self.result_label.setText(f'Total End-to-End Delay: {dend_end:.2f} seconds')
